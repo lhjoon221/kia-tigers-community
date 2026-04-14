@@ -1,0 +1,73 @@
+/* Detail.css */
+.detail-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #FFD700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.post-content-box {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.post-header-info {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.post-body {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    min-height: 200px;
+    white-space: pre-wrap;
+    color: #eee;
+}
+
+/* 하단 버튼 섹션 */
+.action-section {
+    text-align: center;
+    margin-Top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 30px;
+}
+
+.btn-like {
+    background-color: #EA0029;
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(234, 0, 41, 0.4);
+}
+
+.btn-delete-wrapper {
+    margin-top: 30px;
+}
+
+.btn-delete {
+    background: none;
+    border: 1px solid #555;
+    color: #888;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}

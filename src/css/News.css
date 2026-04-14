@@ -1,0 +1,140 @@
+/* News.css */
+.news-container {
+    color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.section-title {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* 매치업 카드 (오른쪽 사진 통일 디자인) */
+.matchup-card-white {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-left: 8px solid #EA0029;
+    margin-bottom: 40px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-box strong {
+    font-size: 1.4rem;
+    color: #EA0029;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.team-box.kiwoom strong {
+    color: #333;
+}
+
+.pitcher-name {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.vs-badge-news {
+    background-color: #EA0029;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.match-info-text {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.btn-match-like-news {
+    background-color: #f8f9fa;
+    border: 2px solid #EA0029;
+    border-radius: 25px;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #EA0029;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btn-match-like-news:hover {
+    background-color: #EA0029;
+    color: white;
+}
+
+/* 인기 게시글 스타일 */
+.hot-post-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #FFD700; /* 인기글은 골드 포인트 */
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.hot-post-card:hover {
+    transform: translateY(-3px);
+}
+
+.post-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title-news {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.top-badge {
+    color: #FFD700;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.post-preview {
+    color: #bbb;
+    font-size: 0.95rem;
+    margin: 12px 0;
+    line-height: 1.4;
+}
+
+.post-like-count {
+    font-size: 0.9rem;
+    color: #EA0029;
+    font-weight: bold;
+}
+.vs-info {
+    text-align: center;
+}
+
+.news-container {
+    color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Pretendard', sans-serif;
+}

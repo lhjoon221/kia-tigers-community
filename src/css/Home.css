@@ -1,0 +1,254 @@
+/* Home.css */
+
+/* 전체 컨테이너 */
+.home-container {
+    color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Pretendard', sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* 헤더 영역 */
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nickname {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* 상단 로그인/로그아웃 버튼 공통 (기아 레드 스타일) */
+.btn-auth-header {
+    background-color: #EA0029;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-auth-header:hover {
+    background-color: #c40022;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(234, 0, 41, 0.3);
+}
+
+.btn-auth-header:active {
+    transform: translateY(0);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    color: #ffffff;
+}
+
+.sub-title {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ⚾️ 매치업 카드 (하얀색 바탕 디자인) */
+.matchup-card-white {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-left: 8px solid #EA0029;
+    margin-bottom: 40px;
+}
+
+.matchup-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.matchup-title {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-name-kia {
+    font-size: 1.4rem;
+    color: #EA0029;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.team-name-kiwoom {
+    font-size: 1.4rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pitcher-name {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.vs-badge-news {
+    background-color: #EA0029;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.match-info-text {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.btn-match-like-news {
+    background-color: #f8f9fa;
+    border: 2px solid #EA0029;
+    border-radius: 25px;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #EA0029;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btn-match-like-news:hover {
+    background-color: #EA0029;
+    color: white;
+}
+
+/* 응원글 작성 버튼 */
+.write-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn-write {
+    background-color: #EA0029;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-write:hover {
+    background-color: #c40022;
+}
+
+/* 게시글 목록 */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    background-color: #333;
+}
+
+.post-title {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.new-badge {
+    color: #EA0029;
+    font-size: 0.7rem;
+    margin-left: 8px;
+    border: 1px solid #EA0029;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.post-info {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.post-author {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.post-date {
+    color: #aaa;
+}
+
+/* 페이지네이션 */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.page-btn.active {
+    background-color: #EA0029;
+}
