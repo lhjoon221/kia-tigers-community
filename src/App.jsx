@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, Navigate } from 'react-router-dom' // Navigate 추가
 import Home from './pages/Home'
 import Write from './pages/Write'
 import Detail from './pages/Detail'
@@ -28,6 +28,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/kia-tigers-community" element={<Home />} />
+
         <Route path="/write" element={<Write />} />
         <Route path="/post/:id" element={<Detail />} />
         <Route path="/news" element={<News />} />
@@ -36,12 +38,13 @@ function App() {
         <Route path="/cheer" element={<Cheer />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      {/* 푸터 영역 추가 */}
+
       <footer style={{ 
         marginTop: '50px', 
         padding: '20px 0', 
-        borderTop: '1px solid #eee', 
+        borderTop: '1px solid #333', 
         textAlign: 'center',
         color: '#999',
         fontSize: '0.8rem'
@@ -49,9 +52,7 @@ function App() {
         <p>본 사이트는 비영리 목적의 개인 포트폴리오이며, 사용된 영상 및 데이터의 저작권은 각 원작자 및 KIA 타이거즈에 있습니다.</p>
         <p>© 2026 Lim Hyung-jun. All Rights Reserved.</p>
       </footer>
-    </div> // 전체 컨테이너 닫는 태그
-  
-    
+    </div>
   )
 }
 

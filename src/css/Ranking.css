@@ -1,7 +1,7 @@
 /* Ranking.css */
 
 .ranking-container {
-    background-color: #2a2a2a; /* 기존 post-card 느낌의 배경 */
+    background-color: #2a2a2a; 
     padding: 25px;
     border-radius: 15px;
     margin: 20px auto;
@@ -52,7 +52,7 @@
 
 /* KIA 타이거즈 강조 스타일 */
 .ranking-table tr.highlight-kia {
-    background-color: #3d1014; /* 다크 레드 배경 */
+    background-color: #3d1014;
     font-weight: bold;
 }
 

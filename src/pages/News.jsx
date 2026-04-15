@@ -52,7 +52,6 @@ function News() {
             <section>
                 <h2 className="section-title">⚾️ 오늘의 매치업 (04. 14)</h2>
                 
-                {/* ⚪️ 오른쪽 사진처럼 파란색 띠 없는 하얀색 카드 디자인 */}
                 <div className="matchup-card-white">
                     <div className="team-row">
                         <div className="team-box">

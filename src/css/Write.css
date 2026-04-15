@@ -26,7 +26,7 @@
 }
 
 .author-name {
-    color: #FFD700; /* 골드 색상으로 포인트 */
+    color: #FFD700; 
     margin-left: 5px;
 }
 
@@ -60,7 +60,7 @@
 /* 본문 입력창 */
 .write-textarea {
     width: 100%;
-    height: 300px; /* 기존보다 조금 더 시원하게 키웠습니다 */
+    height: 300px; 
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #444;

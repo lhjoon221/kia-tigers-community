@@ -1,4 +1,5 @@
-/* 기본 배경 및 폰트 */
+/* App.css */
+
 body {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -12,17 +13,41 @@ body {
   padding: 0 20px;
 }
 
-/* 헤더 및 메뉴 */
-.header { text-align: center; margin-bottom: 40px; }
-.header h1 { color: #EA0029; font-size: 2.8rem; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-.header p { color: #bbb; }
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-.nav-menu { display: flex; justify-content: center; gap: 30px; margin-top: 20px; border-bottom: 2px solid #333; padding-bottom: 15px; }
-.nav-menu a { text-decoration: none; color: #eee; font-weight: bold; }
-.nav-menu a:hover { color: #EA0029; }
+.header h1 {
+  color: #EA0029;
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-/* ✅ [수정] !important 없이 인라인 스타일 이기기 (명시도 높이기) */
-/* 경로를 최대한 구체적으로 적어서 힘을 실어줍니다 */
+.header p {
+  color: #bbb;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #EA0029;
+}
+
 div.container table tr td,
 div.container table tr th,
 .rank-table table tr td,
@@ -30,70 +55,153 @@ div.container table tr th,
   color: #ffffff;
 }
 
-/* 만약 td 안에 span이나 div가 들어있을 경우까지 대비 */
 div.container table tr td span,
 div.container table tr td div {
   color: #ffffff;
 }
 
-table { width: 100%; border-collapse: collapse; background-color: #2a2a2a; color: #ffffff; margin: 20px 0; border-radius: 8px; overflow: hidden; }
-th, td { border: 1px solid #444; padding: 12px; text-align: center; }
-th { background-color: #333; color: #EA0029; font-weight: bold; }
-
-/* ✅ 지도 주소창은 검정색 유지 (흰색 배경이니까) */
-.info-box, .address-tag { 
-  background-color: #ffffff; 
-  color: #000000; 
-  padding: 10px; 
-  border-radius: 5px; 
-  font-weight: bold; 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-/* 게시글 폼 및 카드 */
-.post-form { background: #2a2a2a; padding: 25px; border-radius: 15px; margin-bottom: 50px; box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
-.post-form input, .post-form textarea { 
-  width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #444; 
-  background-color: #1a1a1a; color: white; border-radius: 8px; box-sizing: border-box;
+th, td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: center;
 }
 
-.submit-btn { 
-  width: 100%; padding: 15px; background-color: #EA0029; color: white; border: none; 
-  border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; 
+th {
+  background-color: #333;
+  color: #EA0029;
+  font-weight: bold;
 }
 
-.post-card { 
-  background: #2a2a2a; padding: 25px; border-radius: 15px; border-left: 6px solid #EA0029; 
-  margin-bottom: 20px; transition: 0.2s; cursor: pointer;
+.info-box, .address-tag {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
-.post-card:hover { transform: translateY(-5px); background: #333; }
-.post-card h3 { margin: 0 0 12px 0; color: #ffffff; }
-.post-info { display: flex; justify-content: space-between; border-top: 1px solid #444; padding-top: 15px; color: #888; font-size: 0.85rem; }
 
-/* 버튼 그룹 */
-.btn-group { display: flex; gap: 8px; }
-.edit-btn, .delete-btn { padding: 6px 12px; border-radius: 6px; font-size: 0.8rem; background: #333; color: #eee; border: 1px solid #555; }
-.delete-btn:hover { background: #EA0029; color: white; border-color: #EA0029; }
-
-/* 모바일 최적화 */
-@media (max-width: 412px) {
-  .container { margin: 20px auto; padding: 0 15px; }
-  .header h1 { font-size: 2.2rem; }
-  .post-card { padding: 15px; }
+.post-form {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
-/* 흰색 박스 안의 글씨들을 강제로 검정색으로 만드는 설정 */
 
-/* 매치업 박스 안의 모든 글씨 타격 */
+.post-form input, 
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #EA0029;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-card {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 6px solid #EA0029;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.post-card h3 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn, 
+.delete-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.delete-btn:hover {
+  background: #EA0029;
+  color: white;
+  border-color: #EA0029;
+}
+
+@media screen and (max-width: 430px) {
+  nav, ul, .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 0px;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav a, ul li, .nav-item {
+    font-size: 20px;
+    letter-spacing: -1.2px;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 1;
+    padding: 0 1px;
+  }
+}
+
 section div[style*="background-color: #ffffff"] *,
 section div[style*="background-color: rgb(255, 255, 255)"] * {
-  color: #000000 !important;
+  color: #000000;
 }
 
-/* 기아 팀명은 빨간색 유지 */
 section div[style*="background-color: #ffffff"] h2 {
-  color: #EA0029 !important;
+  color: #EA0029;
 }
 
-/* VS 글씨는 흰색 유지 */
 section div[style*="background-color: #ffffff"] span[style*="background-color: #EA0029"] {
-  color: #ffffff !important;
+  color: #ffffff;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Cheer.css'; // 👈 CSS 연결 확인!
+import '../css/Cheer.css';
 
 function Cheer() {
   const songs = [
