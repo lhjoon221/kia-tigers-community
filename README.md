@@ -1,16 +1,14 @@
-# React + Vite
+# 🐯 KIA Tigers Community
+기아 타이거즈 팬들을 위한 실시간 소통 및 정보 공유 커뮤니티입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠 기술 스택
+- **React**: 컴포넌트 기반 아키텍처 설계
+- **Supabase**: 실시간 데이터베이스 및 CRUD 기능 구현
+- **YouTube API**: 구단 응원가 영상 연동
 
-Currently, two official plugins are available:
+## 📌 주요 특징
+- **반응형 디자인**: 미디어 쿼리를 활용해 모바일 기기에서도 최적화된 인터페이스를 제공합니다.
+- **실시간 데이터 처리**: 게시글 작성, 수정, 삭제 기능을 통해 매끄러운 커뮤니케이션 환경을 구축하였습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 링크
+- [배포 사이트](https://lhjoon221.github.io/kia-tigers-community/)
